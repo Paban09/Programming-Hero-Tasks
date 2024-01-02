@@ -1,0 +1,58 @@
+/* 
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+} */
+
+p{
+   
+    background-color: rgba(0,0, 120,.8);
+    padding: 20px;
+    border: 2px solid black;
+    text-align: justify;
+    /* display: none; */
+    /* border-radius: 10%; */
+}
+
+.firstP{
+    height: 20vh;
+    /* text-align: left; */
+}
+
+#secondP{
+    height: 30vh;
+    font-weight: bold;
+    /* text-align: right; */
+}
+
+.mt-2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.py-2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.py-5{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    
+}
+
+.blog-title{
+    
+    color: white;
+    
+    
+}
+

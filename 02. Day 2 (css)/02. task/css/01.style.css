@@ -1,0 +1,117 @@
+
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+.container{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.mt-3{
+    margin-top: 30px;
+}
+
+.bg-dark{
+    background-color: rgba(15, 14, 14, 0.8);
+}
+
+.nav-link{
+    display: inline;
+    padding: 2px;
+    border: 2px solid black;
+    text-align: center;
+    
+}
+
+.nav-text{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.nav-ul{
+    padding: 10px 10px 10px 10px;
+}
+
+.hero-section{
+    
+    height: auto;
+    background-image: url(../images/banner.avif);
+    background-repeat: no-repeat;
+    background-size: cover;   
+    
+
+}
+
+
+
+.hero-section-content{
+    /* border: 1px solid black; */
+    background-color: rgba(255,255,255, .3);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.py-1{
+    padding-top: 10px;
+   
+}
+.py-2{
+    padding-top: 20px;
+    
+}
+.py-3{
+    padding-top: 30px;
+    
+}
+.py-4{
+    padding-top: 40px;
+   
+}
+.py-5{
+    padding-top: 50px;
+    
+}
+
+
+.btn-success{
+    background-color: green;
+    color:white;
+    padding: 5px 5px 5px 5px;
+}
+
+#hero-heading{
+    
+    text-decoration: underline;
+    
+}
+
+.card-col-md-4{
+    width: 30%;
+    height: auto;
+    border: 1px solid black;
+    display:inline-block;
+    margin: 10px;
+    
+}
+.card-col-md-4 p{
+    padding: 10px;
+}
+
+.contents{
+    background-color: gray;
+}
+
+.blog-footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.hero-section-content p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
