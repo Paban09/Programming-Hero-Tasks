@@ -1,0 +1,89 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.video{
+   height: 40vh;
+   width: auto; 
+   /* margin: auto; */
+
+}
+
+nav > ul{
+    background-color: black;
+    padding: 15px;
+    display: flex;
+}
+
+nav > ul > li {
+    /* display: inline; */
+    /* text-decoration: none; */
+    margin-right: 10px;
+   /* background-color: antiquewhite; */
+   padding: 10px;
+}
+
+
+nav>ul>li>a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+header> nav > ul > li :hover{
+    background-color: rgb(85, 75, 75);
+    transition: 1s;
+}
+
+footer>div{
+    background: black;
+
+}
+footer>div>p{
+    color:aliceblue;
+    text-align: center;
+    padding: 10px;
+    margin-top: 25px;
+    
+}
+
+.audio-section, .video-section, .article-section , .table-section{
+    margin-top: 25px;
+    padding: 20px;
+}
+
+.travel-img{
+    height: 60vh;
+    width: auto;
+    /* padding: 20px; */
+    border: 2px solid gray;
+    margin-top:10px;
+}
+
+.details{
+    margin-top: 20px;
+}
+
+.py-3{
+    padding: 30px 0;
+}
+
+.form-label{
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.form-section{
+    padding:10px;
+    background-color: rgba(121, 119, 119,0.3);
+}
+
+table{
+    border-collapse: collapse;
+}
+td,th{
+    border: 1px solid black;
+    padding: 5px 10px;
+
+}

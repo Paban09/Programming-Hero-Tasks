@@ -1,0 +1,35 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+            /* border: 10px solid green; */
+            justify-content: space-between;
+            /* flex-wrap: wrap; */
+        }
+        
+        nav a{
+            text-decoration: none;
+            color: black;
+            border: 2px solid red;
+            padding: 10px 15px;
+            
+        }
+
+        .login-form-section{
+            margin-top: 20px;
+            border:10px solid yellow;
+            display: flex;
+            justify-content: center;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            border: 5px solid green;
+        }
+        

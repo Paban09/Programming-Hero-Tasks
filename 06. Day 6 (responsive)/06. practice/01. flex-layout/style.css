@@ -1,0 +1,43 @@
+.container{
+    border: 5px solid red;
+    display: flex;
+    height: 400px;
+    gap: 20px; 
+
+
+    /* justify-content works for x anis  */
+
+    justify-content:center;
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    /* justify-content: right; */
+    /* justify-content: end; */
+
+    
+    /* align-items works for y axis  */
+
+    /* align-items: baseline; */
+    align-items: center;
+    /* align-items: end; */
+   
+
+    /* flex is unidirectional by default */
+    /* normally works as row  */
+
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+
+
+    /* flex-wrap: wrap; */
+
+    
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    border: 2px dashed green;
+}
