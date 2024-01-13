@@ -4,14 +4,57 @@
     box-sizing: border-box;
 }
 .upper-footer{
-    border: 1px solid red;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     background-color: black;
     color: white;
+    padding: 20px;
+    height: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex-wrap: wrap;
 }
 
 .upper-footer>div{
-    border: 2px solid green;
     width: 24%;
+    
+    padding: 10px;
+    flex-basis: 200px;
+}
+
+.upper-footer>div>div>.fa-brands{
+    font-size:30px;
+    margin-right: 10px;
+}
+
+.news-input,.news-submit{
+    display: block;
+    width: 80%;
+    height: 35px;
+    margin-top: 5px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+}
+
+.lower-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 50px;
+    padding: 10px;
+    
+}
+
+.lower-footer a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: black;
+}
+
+@media screen and (max-width:576){
+    .upper-footer{
+        flex-direction: column;
+    }
 }
