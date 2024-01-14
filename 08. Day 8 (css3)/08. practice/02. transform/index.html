@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        .container,.inner{
+            width: 200px;
+            height: 200px;
+        }
+        .container{
+            border: 2px solid green;
+            background-color: aqua;
+        }
+
+        .inner{
+            border: 1px solid red;
+            background-color: PERU;
+            /* transform: scale(.75); */
+            /* xy axis */
+            /* transform: scale(.5,.75);  */
+            /* transform: rotate(15deg); */
+            /* transform: translateX(30px); */
+
+            /* transform: scale(.5,.75) rotate(15deg) translateX(30px); */
+        }
+
+        .inner:hover{
+            transform: scale(.5,.75) rotate(15deg) translateX(30px);
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <h2>transform and translate</h2>
+    <div class="container">
+        container-1
+        <div class="inner">Inner-1</div>
+    </div>
+    <div class="container">
+        container-2
+        <div class="inner">Inner-2</div>
+    </div>
+    <div class="container">
+        container-3
+        <div class="inner">Inner-3</div>
+    </div>
+</body>
+</html>
