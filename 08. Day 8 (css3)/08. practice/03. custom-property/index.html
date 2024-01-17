@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variable</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        :root{
+            --primary-color:steelblue;
+            --secondary-color:blue;
+            --font-size:20px;
+        }
+        h1{
+            /* color: steelblue; */
+            color: var(--secondary-color);
+
+        }
+        h3{
+            color: steelblue;
+        }
+        .box{
+            border: 2px solid steelblue;
+            width: calc(100% - 100px);
+        }
+        .box p{
+            color: steelblue;
+        }
+
+        .page{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 200px calc(100% - 200px - 20px);
+            grid-template-rows: 200px;
+        }
+        .nav{
+            background-color: red;
+
+        }
+        .menu{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>css custom properties</h1>
+        <h3>also commonly known as css variable</h3>
+        <div class="box">
+            <h4>i am doing something</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda necessitatibus numquam ex dignissimos natus error recusandae. Dolorem cum nesciunt asperiores quos alias cumque amet odit, error ullam minus, tenetur incidunt!</p>
+        </div>
+
+    </section>
+
+    <section class="page">
+        <div class="nav">nav</div>
+        <div class="menu">menu</div>
+    </section>
+</body>
+</html>
