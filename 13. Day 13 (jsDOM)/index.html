@@ -11,7 +11,7 @@
         <h1>Welcome to my DOM</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, unde neque atque optio illum totam explicabo ut, rerum omnis nobis quo tempore possimus perferendis dolorem corrupti reiciendis fugit sit cum!</p>
     </header>
-    <main>
+    <main id='main-container'>
         <section>
             <h1>Dom manipulation started</h1>
             <ul>
@@ -21,16 +21,16 @@
             </ul>
         </section>
         <section id="team">
-            <h1>Team Members</h1>
+            <h1 id="team-title">Team Members</h1>
             <ul>
-                <li>Masud</li>
-                <li>Rana</li>
-                <li>Paban</li>
+                <li class="member">Masud</li>
+                <li class="member">Rana</li>
+                <li class="member">Paban</li>
             </ul>
         </section>
-        <section>
+        <section id="places-container">
             <h1 id="places-title">places i like to visit</h1>
-            <ul>
+            <ul id="places-list">
                 <li class="important-places">Dhaka</li>
                 <li class="important-places">India</li>
                 <li class="important-places">Pabna</li>
@@ -38,43 +38,9 @@
         </section>
 
     </main>
-    <script>
-        const student={
-            'name':"paban",
-            'id':11,
-            'study':function(time){
-                console.log(time,"Study Kortese");
-            }
-
-        }
-        student.study('25');
-
-        // const liCollection=document.getElementsByTagName('li');
-        // for (const li of liCollection){
-        //     console.log(li.innerText="menu");
-        // }
-
-        const allHeading=document.getElementsByTagName('h1');
-        // console.log(allHeading[0].innerHTML);
-        allHeading[1].innerText="Thigns goiing to change";
-
-        // const teamMembers=document.getElementById("team");
-        // console.log(teamMembers);
-        const teamMembers=document.querySelectorAll("#team li");
-        console.log(teamMembers);
-        for(const someLi of teamMembers){
-            console.log(someLi);
-        }
-
-        const places=document.getElementById("places-title");
-        console.log(places);
-
-        const importantPlaces=document.getElementsByClassName('important-places');
-        console.log(importantPlaces);
-
-
-    </script>
+    <script src="./js/append.js" defer></script>
     <script src="./js/dom.js" defer></script>
+    <script src="./js/styleIn.js" defer></script>
 
 </body>
 </html>
