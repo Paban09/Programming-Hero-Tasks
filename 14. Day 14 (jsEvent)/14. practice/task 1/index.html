@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <section id="first-section">
+        
+        <button onclick="console.log('hello');">Hello</button>
+        <button onclick="makeRed();">Mare Red</button>
+        <button id="make-blue">Make blue</button>
+    </section>
+    <script>
+        function makeRed(){
+            document.body.style.backgroundColor='red'
+        }
+
+        let makeBlue=document.getElementById('make-blue');
+        makeBlue.onclick=backBlue;
+        function backBlue(){
+            document.body.style.backgroundColor='blue'
+
+        }
+    </script>
+    <script src="./event.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>this is paragraph</h1>
+    <div id="paragraph"> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perferendis porro, esse expedita ipsum praesentium? Quasi hic magnam a praesentium?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perferendis porro, esse expedita ipsum praesentium? Quasi hic magnam a praesentium?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perferendis porro, esse expedita ipsum praesentium? Quasi hic magnam a praesentium?</p>   
+    </div>
+    <div>
+        <textarea name="" id="comment" cols="30" rows="10"></textarea>
+        <br>
+        <button id="btn-post">Comment</button>
+    </div>
+    <div>
+        <h1>My info</h1>
+        <p>Delete the paragraph</p>
+        <input id="delete-text" type="text" placeholder="enter delete">
+        <button id="btn-delete" disabled>delete</button>
+    </div>
+    <script>
+        
+       document.getElementById('delete-text').addEventListener('keyup',(event)=>{
+        let deleteButton= document.getElementById('btn-delete');
+
+        if(event.target.value==='delete'){
+            deleteButton.removeAttribute('disabled');
+            
+        }else{
+            deleteButton.setAttribute('disabled',true);
+        }
+        
+       });
+
+       document.getElementById('delete-text').addEventListener('blur',()=>{
+            document.getElementById('delete-text').value='';
+            
+       });
+
+       document.getElementById('btn-delete').addEventListener('click',()=>{
+           console.log('hello');
+       });
+
+        
+    </script>
+    <script src="./event.js"></script>
+</body>
+</html>
