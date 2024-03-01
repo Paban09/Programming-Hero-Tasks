@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+    <style>
+        .post{
+            background-color: aquamarine;
+            padding: 10px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Display All Posts</h1>
+        <button onclick="createPost()">create</button>
+        <button onclick="deletePost()">delete</button>
+        <button onclick="patchPost()">update</button>
+    </header>
+
+    <main>
+        <section>
+            <h3>All Post are here</h3>
+            <div id="post-container">
+               
+            </div>
+        </section>
+    </main>
+    
+    <script src="./post.js"></script>
+</body>
+</html>
